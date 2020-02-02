@@ -1,0 +1,175 @@
+/*  css index.html (chat-all) */
+body{
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(62, 95, 144, 0.75);
+    background-color: #f7f8f9;
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: rgba(62, 95, 144, 0.75);;
+}
+.chat-all{
+    flex-direction: column;
+    display: flex;
+}
+.conva-chat-all{
+    display: flex;
+}
+.header-chat-all{
+    margin-left: 20%;
+    margin-bottom: 60px;
+}
+.content-chat-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-chat-all table{
+    width: 40%;
+    margin-left: -25%;
+}
+.detail-chat-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid#D9DEE4;
+    box-sizing: border-box;
+    padding: 15px 24px;
+}
+.detail-chat-all td:first-child{
+    width: 10%;
+}
+.detail-chat-all td{
+    width: 30%;
+    display: flex;
+}
+.detail-chat-all td:last-child{
+    width: 60%;
+    background: #E9EDF6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 37px;
+}
+.conva-chat-all{
+    margin-top: 100px;
+    margin-left: 30%;
+}
+.conva-chat-all a{
+    margin-left: 5%;
+    background: #E9EDF6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 15px;
+    width: 20%;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.conva-chat-all p{
+    margin-left: -15%;
+    text-decoration: underline;
+}
+/*  css detail.html (detail-chat-all) */
+.fi-info-post{
+    color:rgba(62, 95, 144, 0.75);
+}
+.header-detail-chat{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info-detail-chat{
+    margin-left: 25px;
+}
+.info-detail-chat p{
+    color: #DB2D22;
+    font-size: 16px;
+    line-height: 19px;
+}
+.all-messanger-detail-chat{
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.info-message a{
+    color: #3E5F90;
+}
+.info-message{
+    margin-bottom: 25px;
+}
+.user-message{
+    width:40%;
+    padding: 12px 42px;
+    background: #E9EDF6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.message-detail-chat{
+    width: 70%;
+}
+#message-2user{
+    width: 20%;
+    margin-right: -50%;
+}
+.input-messange{
+    margin-top: 25px;
+    background: linear-gradient(0deg, #F7F8FA, #F7F8FA), #E9EDF6;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 70%;
+    padding: 15px;
+}
+#message-textarea{
+    background: linear-gradient(0deg, #F7F8FA, #F7F8FA), #E9EDF6;
+    border: none;
+    height: 80px;
+    width: 80%;
+    margin-right: -10%;
+    margin-top: 25px;
+    resize: none;
+    font-size: 14px;
+line-height: 16px;
+
+
+color: rgba(62, 95, 144, 0.36);
+}
+.input-text-futter input:last-child{
+    padding: 5px 15px;
+    color: #F7F8FA;
+    background: #3E5F90;
+    border: 1px solid #3E5F90;
+    box-sizing: border-box;
+    float: right;
+}
+@media (max-width:480px){
+    body{
+        font-size: 9px;
+        line-height:auto;
+    }
+    .content-chat-all table {
+        width: 100%;
+        margin-left: 0;
+    }
+    .detail-chat-all td:first-child {
+        width: auto;
+    }
+    .detail-chat-all td {
+        width: auto;
+        display: flex;
+    }
+    .conva-chat-all a{
+        width: auto;
+    }
+    #message-2user {
+        width: auto;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+}
